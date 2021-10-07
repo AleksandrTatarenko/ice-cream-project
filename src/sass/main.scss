@@ -3,5 +3,19 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// Стили для секций
+@import './partials/hero-header.scss';
+@import './partials/products.scss';
+@import './partials/about.scss';
+@import './partials/advantages.scss';
+@import './partials/gallery.scss';
+@import './partials/customer-reviews.scss';
+@import './partials/contacts.scss';
+@import './partials/footer.scss';
+
+@import './base/defaults.scss';
+@import './base/normalize.scss';
+
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
+
