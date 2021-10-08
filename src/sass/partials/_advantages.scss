@@ -1,10 +1,11 @@
 .advantages {
-    background-color: #FFF5F6 ;
+    background-color: #FFF5F6;
 }
 
 .advantages-container {
     padding: 39px 70px 142px 20px;
     margin: 0 auto;
+
     @media screen and (min-width: 480px) {
         width: 480px;
     }
@@ -12,17 +13,17 @@
     @media screen and (min-width: 768px) {
         width: 768px;
         padding: 66px 76px 246px 36px;
-
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        padding: 36px 75px 310px 75px;
     }
 }
 
 .advantages__list {
     @media screen and (min-width: 768px) {
-    display: flex;
+        display: flex;
     }
 }
 
@@ -43,9 +44,15 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 0px;
         
-        
         &:not(:last-child){
             margin-right: 60px;
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        min-width: 330px;
+        &:not(:last-child){
+            margin-right: 30px;
         }
     }
 }
@@ -58,7 +65,6 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none; 
-    
     height: 0px;    
 }
 
@@ -80,6 +86,10 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 36px;
         }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 40px;
+        }
     }
 
     @media screen and (min-width: 480px) {
@@ -89,6 +99,11 @@
     @media screen and (min-width: 768px) {
         font-size: 48px;
         line-height: 1.145;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.138;
     }
 
     &.advantages-logo-1::before  {
@@ -126,5 +141,12 @@
     @media screen and (min-width: 768px) {
         margin-top: 13px;
         line-height: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 15px;
+        line-height: 28px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
