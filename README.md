@@ -36,9 +36,9 @@ npm run dev
 `build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
 
 ```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
+"homepage": "https://TaniMel.github.io/имя_репозитория",
 "scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
+  "build": "parcel build src/*.html --public-url /ice-cream-project/"
 },
 ```
 
