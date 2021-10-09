@@ -1,5 +1,10 @@
 .container {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 .picture {
   display: block;
@@ -11,13 +16,11 @@
   width: 100%;
 }
 .gallery {
-  padding-top: 97px;
   padding-bottom: 80px;
   @media screen and (min-width: 768px) {
-    padding-top: 140px;
-    padding-bottom: 121px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 123px;
+    padding-bottom: 61px;
   }
 }
