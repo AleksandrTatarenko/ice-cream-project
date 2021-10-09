@@ -20,9 +20,10 @@
   line-height: 1.86;
   text-align: center;
   letter-spacing: 0.04em;
-  background-color: #fafafa;
   margin-bottom: 15px;
   padding: 32px 54px 32px 50px;
+
+  background-image: url(../images/customer-reviews/bg-img-customer-review.jpg);
 }
 .slider-container__reviewer-info {
   font-family: $font;
@@ -31,8 +32,11 @@
   line-height: 1.85;
   text-align: center;
 }
+.slider-container__review::before {
+  margin-right: -15px;
+  content: url(../images/customer-reviews/commas.svg);
+}
 .slider-container__reviewer-info::before {
   display: block;
   content: url(../images/customer-reviews/dots.svg);
-  margin: 0 auto;
 }
