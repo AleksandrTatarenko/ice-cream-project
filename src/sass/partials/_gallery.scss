@@ -1,22 +1,18 @@
 .container {
   width: 100%;
 }
-
 .picture {
   display: block;
   margin: 0;
   max-width: 100%;
   height: auto;
 }
-
 .gallery-img {
   width: 100%;
 }
-
 .gallery {
   padding-top: 97px;
   padding-bottom: 80px;
-
   @media screen and (min-width: 768px) {
     padding-top: 140px;
     padding-bottom: 121px;
