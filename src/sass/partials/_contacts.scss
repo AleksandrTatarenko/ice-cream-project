@@ -20,17 +20,16 @@
 .contacts {
   padding-top: 43px;
   @media screen and (max-width: 767px) {
-    background-image: linear-gradient(to bottom, #ffffff 9%, #fff5f6 9%);
+    background-image: linear-gradient(to bottom, $text-1 9%, $bg-2 9%);
   }
-
   @media screen and (min-width: 768px) {
     padding-top: 59px;
     background-color: $bg-2;
+    background-image: linear-gradient(to bottom, $text-1 18.5%, $bg-2 18.5%);
   }
-
   @media screen and (min-width: 1280px) {
     padding-top: 66px;
-    background-image: url(../images/contacts/background-img.png), linear-gradient(to bottom, #ffffff 22%, #fff5f6 22%);
+    background-image: url(../images/contacts/background-img.png), linear-gradient(to bottom, $text-1 22%, $bg-2 22%);
     
     background-repeat: no-repeat;
     background-size: contain;
@@ -44,15 +43,18 @@
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-
   font-family: $font, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
-
+  @media (max-width:767px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: 768px) {
+    padding-left: 36px;
+    padding-right: 36px;
     max-width: 768px;
     font-size: 14px;
   }
@@ -61,7 +63,6 @@
     font-size: 16px;
   }
 }
-
 .contacts__secondary-container {
   @media screen and (min-width: 768px) {
     margin-bottom: 81px;
@@ -70,7 +71,6 @@
     margin-bottom: 86px;
   }
 }
-
 .contacts__list {
   display: block;
   margin-bottom: 54px;
@@ -90,8 +90,7 @@
 
 .contacts__item {
   padding: 43px 20px;
-
-  background-color: #ffffff;
+  background-color: $text-1;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   @media screen and (max-width: 767px) {
@@ -151,7 +150,7 @@
   margin-bottom: 25px;
 
   line-height: 1.5;
-  color: #907e82;
+  color: $text-3;
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     line-height: 1.66;
@@ -244,7 +243,6 @@
   display: flex;
   align-items: center;
   height: 44px;
-
   font-family: $font, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -290,17 +288,21 @@
 .contacts__button_dark {
   color: $text-1;
   background-color: $icon-1;
+  @include transition (background-color);
+  &:hover,
+  &:focus {
+    background-color: $hover-1;
+  }
 }
 
 .contacts__button_light {
   color: $focus;
-  background-color: #ffffff;
-
+  background-color: $text-1;
   @include transition(background-color);
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $hover-2;
   }
 }
 
@@ -310,10 +312,4 @@
   margin-left: 14px;
 }
 
-.contacts__icon_light {
-  fill: $text-1;
-}
 
-.contacts__icon_dark {
-  fill: $focus;
-}

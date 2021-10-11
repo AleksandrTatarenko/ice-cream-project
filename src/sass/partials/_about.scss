@@ -1,38 +1,40 @@
 .about-section {
-  background-color: #fff5f6;
-  padding-top: 125px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
+  background-color: $bg-2;
 }
-
-@media (max-width: 480px), (min-width: 1200px) {
+@media (max-width: 480px) {
   .about-section {
     min-width: 320px;
-    background-image: url(../images/about/secbg-mob2x.png);
+    background-image: url(../images/about/secbg-mob1x.png);
     background-size: contain;
     background-origin: padding-box;
     background-position: center bottom 70px;
     background-repeat: no-repeat;
   }
 }
-
 .about-container {
   text-align: center;
+  padding-top: 125px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @media (min-width: 480px) {
+    max-width: 480px;
+  }
 }
 .about-span {
   font-family: Titan One;
-  color: #ffa5ba;
+  color: $bg-img-hero;
   font-size: 18px;
   line-height: 0.86;
-
   text-transform: uppercase;
   text-align: center;
 }
-
 .about-title {
-  font-family: Titan One;
-  color: #d41443;
+  font-family: $font-h;
+  color: $focus;
   font-size: 34px;
   line-height: 0.87;
   text-align: center;
@@ -50,11 +52,11 @@
 .about-text {
   padding: 20px;
   min-width: 220px;
-  text-align: center;
+  text-align: start;
 }
 .about-text__pre-info {
-  font-family: DM Sans;
-  color: #000000;
+  font-family: $font;
+  color: $text-2;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
@@ -62,9 +64,8 @@
   margin-bottom: 46px;
 }
 .about-text__info {
-  font-family: DM Sans;
-
-  color: #907e82;
+  font-family: $font;
+  color: $text-3;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
@@ -78,22 +79,22 @@
 .about-btn {
   width: 176px;
   height: 44px;
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: $text-1;
+  color: $focus;
   border-radius: 22px;
   border: transparent;
-  font-family: DM Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 0.78;
   text-align: center;
   margin-top: 20px;
-
-  .about-btn:hover,
-  .about-btn:focus {
-    background-color: #ecebeb;
-  }
+  @include transition (background-color);
+}
+.about-btn:hover,
+.about-btn:focus {
+  background-color: $bg-2;
 }
 .about-btn::after {
   content: '>';
@@ -106,9 +107,8 @@
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  .about-section {
-    padding-left: 40px;
-    padding-right: 40px;
+  .about-container {
+    max-width: 768px;
   }
   .about-span {
     font-size: 26px;
@@ -139,10 +139,18 @@
     margin-right: 120px;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1280px) {
   .about-section {
+    background-image: url(../images/about/secbg-1x.png);
+    background-size: contain;
+    background-origin: padding-box;
+    background-position: center bottom 70px;
+    background-repeat: no-repeat;
+  }
+  .about-container {
+    max-width: 1280px;
     padding-left: 112px;
-    padding-right: 112px;
+    padding-right: 117px;
   }
   .about-span {
     font-size: 30px;
@@ -156,15 +164,11 @@
     letter-spacing: 0.06em;
   }
   .about-text {
-    width: 460px;
-    margin: 0;
+    width: 463px;
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.76;
     letter-spacing: 0.04em;
     margin-bottom: 50px;
     margin-top: 100px;
-  }
-  .about-btn {
-    margin-right: 250px;
   }
 }
