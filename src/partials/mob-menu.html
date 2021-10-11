@@ -1,51 +1,30 @@
 <div class="menu-container js-menu-container">
-    <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="12" height="29" aria-label="Переключатель мобильного меню">
-            <use class="icon-menu-mob" href="./images/symbol-defs.svg#icon-close"></use>
-            </svg>    
+    <button class="menu-toggle js-close-menu">
+        <svg width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
     </button>
-</div>
-
-
-<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-    <svg class="menu-toggle__icon" width="12" height="29" fill="currentColor" aria-label="Переключатель мобильного меню">
-        <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
-        </svg>    
-</button>
-
-
-
-<div class="mob-menu is-hidden" data-menu >
-    <button type="button" class="menu-toggle js-close-menu" data-menu-close>    
-</button>
-<button class="mob-menu__button">
-    <div class="mob-menu__button-content">
-    <a class="mob-menu__button-link link" href="">Buy now</a>
-    <svg class="mob-menu__button-icon">
-        <use href="./images/symbol-defs.svg#icon-vector-hero"/>
-    </svg>
-</div>
-</button>
-<ul class="mob-menu-list list">
-    <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="">Home</a>
+    <button class="mob-menu__button">
+        <p class="mob-menu__button--text">Buy now</p>
+        <svg class="mob-menu__button--icon" width="10" height="14">
+            <use href="./images/symbol-defs.svg#icon-vector-hero"/>
+        </svg>
+    </button>
+    <ul class="mob-menu__list ">
+    <li class="mob-menu__list--item">
+        <a class="mob-menu__link" href="">Home</a>
     </li>
-    <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="">About us</a>
+    <li class="mob-menu__list--item">
+        <a class="mob-menu__link" href="">About us</a>
     </li>
-    <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="">How it’s made?</a>
+    <li class="mob-menu__list--item">
+        <a class="mob-menu__link" href="">How it’s made?</a>
     </li>
-    <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="">Our products</a>
+    <li class="mob-menu__list--item">
+        <a class="mob-menu__link" href="">Our products</a>
     </li>
-    <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="">Contact</a>
+    <li class="mob-menu__list--item">
+        <a class="mob-menu__link" href="">Contact</a>
     </li>
     </ul>
 </div>
-<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-    <svg class="menu-toggle__icon" width="20" height="12" fill="currentColor" aria-label="Переключатель мобильного меню">
-        <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
-    </svg>
-</button>
