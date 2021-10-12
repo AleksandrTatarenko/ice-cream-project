@@ -16,7 +16,7 @@
 <path fill="none" stroke="#d41443" style="stroke: var(--color3, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"></path>
 </symbol>
 <symbol id="icon-normal" viewBox="0 0 32 32">
-<path fill="#d9d9d9" style="fill: var(--color4, #d9d9d9)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#d9d9d9" style="fill: var(--color4, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
 <symbol id="icon-points" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M19.692 16c0 2.039-1.653 3.692-3.692 3.692s-3.692-1.653-3.692-3.692c0-2.039 1.653-3.692 3.692-3.692s3.692 1.653 3.692 3.692z"></path>
