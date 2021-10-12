@@ -1,3 +1,37 @@
+/*Слайдер*/
+.slick-next {
+  display: none;
+}
+.slick-prev {
+  display: none;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.slick-dots li{
+  display: flex;
+  width: 13px;
+  height: 13px;
+  border:none;
+  border-radius: 50%;
+  margin-left: 0;
+  background-color: $icon-2;
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+.slick-dots li.slick-active{
+  background-image: url(../images/active.svg);
+  background-color: $text-1;
+  background-repeat: no-repeat;
+  border-radius: none;
+}
+.slick-dots li button{
+  display: none; 
+}
+/*Секция*/
 .cus-rev {
   background-color: $text-1;
 }
@@ -34,6 +68,7 @@
   margin-right: auto;
 }
 .cus-rev__gradient {
+  background-color: $bg-3;
   text-align: center;
   margin-right: 66px;
   margin-left: 57px;
@@ -61,7 +96,7 @@
 }
 .cus-rev__text {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   box-sizing: border-box;
   font-family: $font;
   font-weight: 500;
@@ -74,7 +109,7 @@
   z-index: 1;
   top: -24px;
   left: -32px;
-  content: url(../images/customer-reviews/commas.svg);
+  content: url(../images/customer-reviews/commas.png);
   @media  (min-width:768px) {
   left: -40px;
   }
