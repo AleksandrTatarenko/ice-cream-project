@@ -25,7 +25,7 @@
     @media (min-width: 1280px) {
         max-width: 1280px;
         padding-top: 37px;
-        padding-right: 97px;
+        padding-right: 37px;
         padding-left: 46px;
         padding-bottom: 41px;
     }
@@ -148,9 +148,6 @@
     padding-left: 15px;
     border-radius: 20px;
     border: none;
-    &--icon {
-      margin-left: 16px;
-    }
     @media (min-width: 1280px) {
         margin-top: 25px;
         padding-top: 10px;
@@ -158,21 +155,24 @@
         padding-right: 20px;
         padding-left: 20px;
     }
+    &--link {
+        font-family: $font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 1.25;
+        @media (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+    }
 }
 .red {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: $font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 8px;
-    line-height: 10px;
-    border-radius: 20px;
-    border: none;
     margin-right: 5px;
     background-color: $focus;
-    color: $text-1;
     @include transition (background-color);
     &:hover {
      background-color: $hover-1;
@@ -185,23 +185,13 @@
     }
     @media (min-width: 1280px) {
         margin-left: 70px;
-        font-size: 14px;
-        line-height: 1.28;
     }
 }
 .white {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: $font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 8px;
-    line-height: 10px;
-    border-radius: 20px;
-    border: none;
     background-color: $text-1;
-    color: $focus;
     @include transition (background-color);
     &:hover {
     background-color: $hover-2;
@@ -209,10 +199,12 @@
     &:focus {
     background-color: $hover-2;
     }
-     @media (min-width: 1280px) {
-        font-size: 14px;
-        line-height: 1.28;
-    }
+}
+.red-link {
+    color: $text-1;
+}
+.white-link {
+    color: $focus;
 }
 .hero-header__box-1 {
     position: absolute;
@@ -258,6 +250,7 @@
        z-index: 2;
        display: flex;
        align-items: center;
+       margin-right: 78px;
        padding-left: 37px;
        padding-right: 37px;
        padding-top: 10px;
@@ -299,11 +292,10 @@
     }
     @media (min-width: 1280px) {
         margin-top: 56px;
-        margin-right: 31px;
     }
 }
 .hero-header__text-box {
-    margin-top: auto;
+    padding-top: 65px;
     width: 114px;
     @media (min-width: 1280px) {
         width: 200px;
@@ -490,30 +482,30 @@
     display: none;
     @media(min-width:1280px){
         position: relative;
-        z-index: 5;
+        z-index: 3;
         display: flex;
         justify-content: center;
         align-items: center; 
         margin-left: 110px;
-        &--item {
-            font-family: $font;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 21px;
-            display: flex;
-            align-items: center;
-            color: $text-1;
-            @include transition (color);
-            &:hover {
-            color: $focus;
-            }
-            :focus {
-            color: $focus;
-            }
-        } 
         &--item:not(:last-child) {
             margin-right: 35px;
         }
+    }
+}
+.hero-header__link {
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: $text-1;
+    @include transition (color);
+    &:hover {
+        color: $focus;
+    }
+    &:focus {
+        color: $focus;
     }
 }
