@@ -10,11 +10,11 @@
   justify-content: center;
   align-items: flex-end;
 }
-.slick-dots li{
+.slick-dots li {
   display: flex;
   width: 13px;
   height: 13px;
-  border:none;
+  border: none;
   border-radius: 50%;
   margin-left: 0;
   background-color: $icon-2;
@@ -22,14 +22,14 @@
     margin-right: 18px;
   }
 }
-.slick-dots li.slick-active{
+.slick-dots li.slick-active {
   background-image: url(../images/active.svg);
   background-color: $text-1;
   background-repeat: no-repeat;
   border-radius: none;
 }
-.slick-dots li button{
-  display: none; 
+.slick-dots li button {
+  display: none;
 }
 /*Секция*/
 .cus-rev {
@@ -44,17 +44,17 @@
   padding-bottom: 43px;
   margin-right: auto;
   margin-left: auto;
-  @media  (max-width:767px) {
+  @media (max-width: 767px) {
     max-width: 320px;
   }
-  @media  (min-width:768px) {
+  @media (min-width: 768px) {
     max-width: 768px;
     padding-left: 74px;
     padding-right: 74px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  @media  (min-width:1280px) {
+  @media (min-width: 1280px) {
     max-width: 1280px;
     padding-left: 178px;
     padding-right: 176px;
@@ -74,25 +74,25 @@
   margin-left: 57px;
   margin-top: 72px;
   margin-bottom: 72px;
-  @media  (min-width:768px) {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 66px;
-  margin-bottom: 76px;
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 66px;
+    margin-bottom: 76px;
   }
-  @media  (min-width:1280px) {
-  margin-left: 87px;
-  margin-right: 89px;
-  margin-top: 62px;
-  margin-bottom: 73px;
+  @media (min-width: 1280px) {
+    margin-left: 87px;
+    margin-right: 89px;
+    margin-top: 62px;
+    margin-bottom: 73px;
   }
 }
 .cus-rev__gradient p {
   display: inline;
-	background-repeat: no-repeat;
-	background-position: center bottom 1px;
-	background-size: 100% 1px;
-	background-image: linear-gradient(to right, $border, $border);
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
+  background-size: 100% 1px;
+  background-image: linear-gradient(to right, $border, $border);
 }
 .cus-rev__text {
   position: relative;
@@ -105,25 +105,25 @@
   letter-spacing: 0.04em;
   text-decoration: none;
   &::before {
-  position: absolute;
-  z-index: 1;
-  top: -24px;
-  left: -32px;
-  content: url(../images/customer-reviews/commas.png);
-  @media  (min-width:768px) {
-  left: -40px;
+    position: absolute;
+    z-index: -1;
+    top: -24px;
+    left: -32px;
+    content: url(../images/customer-reviews/commas.png);
+    @media (min-width: 768px) {
+      left: -40px;
+    }
+    @media (min-width: 1280px) {
+      left: -45px;
+    }
   }
-  @media  (min-width:1280px) {
-  left: -45px;
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
   }
-  }
-  @media  (min-width:768px) {
-  font-size: 14px;
-  line-height: 2.16;
-  }
-  @media  (min-width:1280px) {
-  font-size: 16px;
-  line-height: 1.86;
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
   }
 }
 .cus-rev__name {
@@ -136,24 +136,24 @@
   line-height: 1.85;
   text-align: center;
   &::before {
-  position: absolute;
-  left: 120px;
-  top: -30px;
-  content: url(../images/customer-reviews/dots.svg);
-  @media  (min-width:768px) {
-  top: -28px;
-  left: 294px;
+    position: absolute;
+    left: 120px;
+    top: -30px;
+    content: url(../images/customer-reviews/dots.svg);
+    @media (min-width: 768px) {
+      top: -28px;
+      left: 294px;
+    }
+    @media (min-width: 1280px) {
+      top: -33px;
+      left: 450px;
+    }
   }
-  @media  (min-width:1280px) {
-  top: -33px;
-  left: 450px;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.86;
   }
-  }
-  @media  (min-width:768px) {
-  font-size: 16px;
-  line-height: 1.86;
-  }
-  @media  (min-width:1280px) {
-  font-size: 20px;
+  @media (min-width: 1280px) {
+    font-size: 20px;
   }
 }
