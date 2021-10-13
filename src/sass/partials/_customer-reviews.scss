@@ -34,14 +34,22 @@
 /*Секция*/
 .cus-rev {
   background-color: $text-1;
+  padding-top: 40px;
+  padding-bottom: 43px;
+  @media (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
 }
 .cus-rev__container {
   width: 100%;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 43px;
   margin-right: auto;
   margin-left: auto;
   @media (max-width: 767px) {
@@ -51,48 +59,50 @@
     max-width: 768px;
     padding-left: 74px;
     padding-right: 74px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   @media (min-width: 1280px) {
     max-width: 1280px;
     padding-left: 178px;
     padding-right: 176px;
-    padding-top: 61px;
-    padding-bottom: 66px;
   }
 }
 .cus-rev__image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
 }
 .cus-rev__gradient {
   background-color: $bg-3;
   text-align: center;
-  margin-right: 66px;
-  margin-left: 57px;
-  margin-top: 72px;
-  margin-bottom: 72px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 47px;
+  background: repeating-linear-gradient($bg-3, $bg-3 31px, $border 31px,$border 32px);
   @media (min-width: 768px) {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 66px;
-    margin-bottom: 76px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 62px;
   }
   @media (min-width: 1280px) {
-    margin-left: 87px;
-    margin-right: 89px;
-    margin-top: 62px;
-    margin-bottom: 73px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 52px;
   }
-}
-.cus-rev__gradient p {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center bottom 1px;
-  background-size: 100% 1px;
-  background-image: linear-gradient(to right, $border, $border);
 }
 .cus-rev__text {
   position: relative;
@@ -107,14 +117,16 @@
   &::before {
     position: absolute;
     z-index: -1;
-    top: -24px;
-    left: -32px;
+    top: -20px;
+    left: -6px;
     content: url(../images/customer-reviews/commas.png);
     @media (min-width: 768px) {
-      left: -40px;
+      top: -20px;
+      left: -30px;
     }
     @media (min-width: 1280px) {
-      left: -45px;
+      top: -20px;
+      left: -8px;
     }
   }
   @media (min-width: 768px) {
@@ -136,17 +148,12 @@
   line-height: 1.85;
   text-align: center;
   &::before {
-    position: absolute;
-    left: 120px;
-    top: -30px;
+    display: block;
     content: url(../images/customer-reviews/dots.svg);
+    margin-bottom: 18px;
     @media (min-width: 768px) {
-      top: -28px;
-      left: 294px;
     }
     @media (min-width: 1280px) {
-      top: -33px;
-      left: 450px;
     }
   }
   @media (min-width: 768px) {
