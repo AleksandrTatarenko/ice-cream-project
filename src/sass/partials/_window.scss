@@ -23,7 +23,8 @@
   @include transition(transform);
   display: block;
   width: 100%;
-  max-width: 450px;
+  max-width: 320px;
+  height: auto;
   padding-top: 8px;
   padding-right: 8px;
   padding-left: 40px;
@@ -48,16 +49,20 @@
   &__icon {
     fill: $focus;
   }
+  @media (min-width:480px) {
+    max-width: 420px;
+  }
 }
 
 .modal__title {
-  font-family: Titan One;
+  width: 100%;
+  font-family: $font-h;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: $text-1;
   padding-top: 12px;
   padding-right: 32px;
   font-size: 20px;
@@ -76,18 +81,18 @@
   margin-top: 8px;
 }
 .modal__label {
-  font-family: DM Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.31;
-  color: #fff;
+  color: $text-1;
 }
 
 .modal__input {
-  font-family: DM Sans;
-  color: #d41443;
-  border: 1px solid #fff;
+  font-family: $font;
+  color: $focus;
+  border: 1px solid $text-1;
   box-sizing: border-box;
   border-radius: 4px;
   height: 25px;
@@ -96,19 +101,19 @@
   position: relative;
   cursor: pointer;
   letter-spacing: 0.01em;
-  background-color: #ffb8ca;
-  transition: border 250ms linear;
+  background-color: $bg-img-hero;
+  @include transition (border);
 }
 .modal__input:hover,
 .modal__input:focus {
-  border: 1px solid #d41443;
+  border: 1px solid $focus;
 }
 .modal__button--div {
   display: flex;
   justify-content: center;
 }
 .modal__button--submit {
-  font-family: DM Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -121,13 +126,13 @@
   padding-bottom: 10px;
   border-radius: 20px;
   border: none;
-  color: #d41443;
-  background-color: #ffffff;
-  transition: background-color 250ms linear;
+  color: $focus;
+  background-color: $text-1;
+  @include transition (background-color);
   margin-top: 30px;
   cursor: pointer;
 }
 .modal__button--submit:hover,
 .modal__button--submit:focus {
-  background-color: #ecebeb;
+  background-color: $hover-2;
 }
